@@ -1,4 +1,9 @@
 <div class="page">
+  <select [(ngModel)]="selectedOption" (ngModelChange)="onChangeofOptions($event)">
+    <option value="<i:chocolate:>">Chocolate</option>
+    <option value="<i:strawberry:>">Strawberry</option>
+    <option value="<i:vanilla:>">Vanilla</option>
+</select>
   <div class="header">Angular sample</div>
   <div #viewer class="viewer"></div>
 </div>
